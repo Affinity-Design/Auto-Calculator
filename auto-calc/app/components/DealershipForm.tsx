@@ -69,7 +69,7 @@ export default function DealershipForm({ onFormChange }: DealershipFormProps) {
     ) {
       onFormChange(currentValues as FormData);
     }
-  }, [onFormChange]);
+  }, [watch, onFormChange]);
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
